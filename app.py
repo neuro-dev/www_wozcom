@@ -66,5 +66,4 @@ def project_detail(filename):
                          active_page='projects')
 
 if __name__ == '__main__':
-    #app.run(host='0.0.0.0', port=443, debug=True, ssl_context=('woz_cert.pem', 'woz_pk.pem'))
-    app.run()
+    app.run(host='0.0.0.0', port=443, debug=True, ssl_context=('woz_cert.pem', 'woz_key.pem'))
