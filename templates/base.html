@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{% block meta_description %}Alex Smith - Frontend Developer Portfolio{% endblock %}">
+    <title>{% block title %}Дмитрий Зубков - wozcom{% endblock %}</title>
+    
+    <!-- Подключение CSS через url_for (правильный путь для Flask) -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+    <!-- Декоративные элементы фона -->
+    <div class="deco-shape deco-1"></div>
+    <div class="deco-shape deco-2"></div>
+    <div class="deco-shape deco-3"></div>
+
+    <!-- Основной контейнер -->
+    <div class="container">
+        <!-- Шапка с навигацией (одинаковая на всех страницах) -->
+        <header class="header">
+            <div class="logo">
+                <a href="{{ url_for('index') }}" class="logo-link">
+                    <span class="logo-letter">W</span>
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="{{ url_for('index') }}" class="nav-link {% if active_page == 'about' %}active{% endif %}">Обо мне</a></li>
+                    <li class="nav-item"><a href="{{ url_for('contacts') }}" class="nav-link {% if active_page == 'contacts' %}active{% endif %}">Контакты</a></li>
+                    <!--<li class="nav-item"><a href="{{ url_for('projects_list') }}" class="nav-link {% if active_page == 'projects' %}active{% endif %}">Проекты</a></li>-->
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Основной контент (меняется на каждой странице) -->
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+
+        <!-- Футер -->
+        <footer class="footer">
+            <p class="footer-text">© 2026 Wozcom. Все права защищены.</p>
+        </footer>
+    </div>
+
+    <!-- Подключение JavaScript -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

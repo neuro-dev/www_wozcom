@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block title %}Проекты - Alex Smith{% endblock %}
+{% block meta_description %}Мои проекты и портфолио{% endblock %}
+
+{% block content %}
+{% if current_project %}
+    <!-- Просмотр одной статьи -->
+    <a href="{{ url_for('projects_list') }}" class="back-link">← Назад к списку</a>
+    <h1>{{ current_project.title }}</h1>
+    <div class="content">
+        {{ current_project.content | safe }}
+    </div>
+{% else %}
+    <!-- Список проектов -->
+    <h1>Все проекты</h1>
+    <p>Файлы из папки <code>projects/</code></p>
+    
+    <div class="list">
+        {% for project in projects %}
+            <div class="project-card">
+                <h2>
+                    <a href="{{ url_for('project_detail', filename=project.filename) }}">
+                        {{ project.title }}
+                    </a>
+                </h2>
+                <p>Файл: {{ project.filename }}</p>
+            </div>
+        {% endfor %}
+    </div>
+{% endif %}
+{% endblock %}
+
+{% block extra_head %}
+<style>
+    /* Локальные стили только для страницы проектов */
+    .back-link {
+        display: inline-block;
+        margin-bottom: 20px;
+        text-decoration: none;
+        color: var(--text-secondary);
+        transition: color var(--transition-fast);
+    }
+    .back-link:hover { color: var(--accent-primary); }
+    
+    .project-card {
+        border: 1px solid var(--border-color);
+        padding: 20px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        transition: transform var(--transition-normal), background var(--transition-normal);
+    }
+    .project-card:hover {
+        transform: translateX(5px);
+        background: var(--card-hover);
+    }
+    .project-card h2 { margin: 0 0 10px 0; }
+    .project-card a {
+        text-decoration: none;
+        color: var(--accent-primary);
+        font-weight: 600;
+    }
+    .content {
+        line-height: 1.7;
+        color: var(--text-secondary);
+    }
+    .content h1, .content h2, .content h3 { color: var(--text-primary); margin-top: 1.5em; }
+    .content a { color: var(--accent-primary); }
+    .content pre {
+        background: var(--card-hover);
+        padding: 15px;
+        border-radius: 8px;
+        overflow-x: auto;
+    }
+    .content img { max-width: 100%; border-radius: 8px; }
+</style>
+{% endblock %}

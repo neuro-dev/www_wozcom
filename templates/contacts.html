@@ -1,0 +1,265 @@
+{% extends "base.html" %}
+
+{% block title %}wozcom - contacts{% endblock %}
+{% block meta_description %}wozcom - contacts{% endblock %}
+
+{% block content %}
+<section class="contacts">
+    <h1 class="contacts-title">Контакты</h1>    
+    <!-- Социальные сети -->
+    <div class="contacts-list">
+        <a href="https://t.me/wozcom" target="_blank" class="contact-card">
+            <div class="contact-icon telegram">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                </svg>
+            </div>
+            <div class="contact-info">
+                <h3 class="contact-name">Telegram</h3>
+                <p class="contact-value">@wozcom</p>
+            </div>
+        </a>
+
+        <div class="contact-card">
+            <div class="contact-icon email">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+            </div>
+            <div class="contact-info">
+                <h3 class="contact-name">Email</h3>
+                <p class="contact-value">wozcom@yandex.ru</p>
+            </div>
+        </div>
+
+        <a href="https://github.com/neuro-dev" target="_blank" class="contact-card">
+            <div class="contact-icon github">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+            </div>
+            <div class="contact-info">
+                <h3 class="contact-name">GitHub</h3>
+                <p class="contact-value">github.com/neuro-dev</p>
+            </div>
+        </a>
+
+        <a href="https://hub.docker.com/u/thresun" target="_blank" class="contact-card">
+            <div class="contact-icon docker">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.887c0 .102.083.186.185.186m-2.954-5.43h2.119a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.119a.185.185 0 00-.185.185v1.887c0 .102.083.186.185.186m0 2.716h2.119a.187.187 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.119a.185.185 0 00-.185.185v1.887c0 .102.083.186.185.186m-2.93 0h2.12a.186.186 0 00.184-.186V6.29a.185.185 0 00-.185-.185H8.1a.185.185 0 00-.185.185v1.887c0 .102.083.186.185.186m-2.963 0h2.119a.186.186 0 00.186-.186V6.29a.185.185 0 00-.186-.185H5.136a.186.186 0 00-.186.185v1.887c0 .102.084.186.186.186m5.893 2.715h2.119a.186.186 0 00.186-.186V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.887c0 .102.083.186.185.186m-2.93 0h2.12a.185.185 0 00.184-.186V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.887c0 .102.083.186.185.186m-2.964 0h2.119a.186.186 0 00.186-.186V9.006a.185.185 0 00-.186-.186H5.136a.186.186 0 00-.186.185v1.887c0 .102.084.186.186.186m-2.929 0h2.119a.187.187 0 00.186-.186V9.006a.186.186 0 00-.186-.186H5.136a.186.186 0 00-.186.185v1.887c0 .102.084.186.186.186m12.025 9.155H3.537a.753.753 0 01-.75-.75V6.246c0-.414.336-.75.75-.75h16.926c.414 0 .75.336.75.75v12.453c0 .414-.336.75-.75.75zm-2.38-13.43a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.119a.185.185 0 00-.185.185v1.887c0 .102.083.186.185.186h2.119m2.93 5.43h2.119a.187.187 0 00.186-.186V9.006a.186.186 0 00-.186-.186h-2.119a.186.186 0 00-.186.185v1.887c0 .102.084.186.186.186m0-2.716h2.119a.186.186 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.119a.185.185 0 00-.185.185v1.887c0 .102.083.186.185.186m0-5.43h2.119a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.119a.185.185 0 00-.185.185v1.887c0 .102.083.186.185.186z"/>
+                </svg>
+            </div>
+            <div class="contact-info">
+                <h3 class="contact-name">Docker Hub</h3>
+                <p class="contact-value">hub.docker.com/u/thresun</p>
+            </div>
+        </a>
+
+        <a href="https://steamcommunity.com/id/neuro_steam/" target="_blank" class="contact-card">
+            <div class="contact-icon steam">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M11.979 0C5.666 0 .511 4.99.022 11.227l4.373 1.815c.637-.416 1.404-.66 2.228-.66.075 0 .15.004.224.009l2.096-3.025c.063-.09.103-.198.103-.316 0-.276-.224-.5-.5-.5-.042 0-.082.007-.121.017L4.106 6.96C5.096 3.007 8.673 0 12.979 0c5.522 0 10 4.477 10 10s-4.478 10-10 10c-2.843 0-5.406-1.196-7.229-3.114l2.886-4.172c.637.416 1.404.66 2.228.66 2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4c0 .276.028.545.082.807l-4.34-1.802C2.815 17.668 7.027 22 12.979 22 19.054 22 24 17.054 24 11S19.054 0 12.979 0h-1zM9.479 10c0-1.103.897-2 2-2s2 .897 2 2-.897 2-2 2-2-.897-2-2zm6.5 6.5c-.828 0-1.5-.672-1.5-1.5s.672-1.5 1.5-1.5 1.5.672 1.5 1.5-.672 1.5-1.5 1.5z"/>
+                </svg>
+            </div>
+            <div class="contact-info">
+                <h3 class="contact-name">Steam</h3>
+                <p class="contact-value">steamcommunity.com/id/neuro_steam</p>
+            </div>
+        </a>
+
+        <a href="https://discordapp.com/users/428207158006513665" target="_blank" class="contact-card">
+            <div class="contact-icon discord">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                </svg>
+            </div>
+            <div class="contact-info">
+                <h3 class="contact-name">Discord</h3>
+                <p class="contact-value">[wozcom]#5276</p>
+            </div>
+        </a>
+        
+        <!-- Spotify (новый) -->
+        <a href="https://open.spotify.com/user/wozcom" target="_blank" class="contact-card">
+            <div class="contact-icon spotify">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02z…48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+                </svg>
+            </div>
+            <div class="contact-info">
+                <h3 class="contact-name">Spotify</h3>
+                <p class="contact-value">open.spotify.com/user/wozcom</p>
+            </div>
+        </a>
+
+        <!-- Yandex Music (новый) -->
+        <a href="https://music.yandex.ru/playlists/lk.b2e71c1c-ef10-4712-a8a4-be2008e73e7c?utm_source=web&utm_medium=copy_link" target="_blank" class="contact-card">
+            <div class="contact-icon yandex-music">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 22c-5.523 0-10-4.477-10-10S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-14h2v6h-2V8zm0 8h2v2h-2v-2z"/>
+                    <circle cx="12" cy="12" r="3"/>
+                    <path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/>
+                </svg>
+            </div>
+            <div class="contact-info">
+                <h3 class="contact-name">Yandex Music</h3>
+                <p class="contact-value">wozcom - Мне нравится</p>
+            </div>
+        </a>
+
+        <div class="contact-card">
+            <div class="contact-icon location">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+            </div>
+            <div class="contact-info">
+                <h3 class="contact-name">Локация</h3>
+                <p class="contact-value">Москва, Россия</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_head %}
+<style>
+    .contacts {
+        padding: 40px 0;
+    }
+
+    .contacts-title {
+        font-size: 48px;
+        color: var(--text-primary);
+        text-align: center;
+        margin-bottom: 15px;
+        font-weight: 700;
+    }
+
+    .contacts-subtitle {
+        color: var(--text-secondary);
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+
+    .contacts-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .contact-card {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        padding: 25px 30px;
+        background: rgba(42, 42, 74, 0.5);
+        border-radius: 15px;
+        border: 1px solid var(--border-color);
+        transition: all var(--transition-normal);
+        text-decoration: none;
+    }
+
+    .contact-card:hover {
+        background: var(--card-hover);
+        border-color: var(--accent-primary);
+        transform: translateX(10px);
+        box-shadow: var(--shadow-md);
+    }
+
+    .contact-icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        background: var(--accent-gradient);
+    }
+
+    .contact-icon svg {
+        width: 32px;
+        height: 32px;
+        color: white;
+    }
+
+    .contact-icon.telegram { background: #0088cc; }
+    .contact-icon.github { background: #333333; }
+    .contact-icon.docker { background: #2496ed; }
+    .contact-icon.steam { background: #1b2838; }
+    .contact-icon.discord { background: #5865F2; }
+    .contact-icon.email { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+    .contact-icon.location { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+
+    .contact-info {
+        flex: 1;
+    }
+
+    .contact-name {
+        color: var(--text-primary);
+        font-size: 18px;
+        font-weight: 600;
+        margin: 0 0 5px 0;
+    }
+
+    .contact-value {
+        color: var(--text-secondary);
+        font-size: 15px;
+        margin: 0;
+        line-height: 1.5;
+    }
+
+    @media (max-width: 768px) {
+        .contacts-title {
+            font-size: 36px;
+        }
+
+        .contact-card {
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+        }
+
+        .contact-icon svg {
+            width: 28px;
+            height: 28px;
+        }
+
+        .contact-name {
+            font-size: 16px;
+        }
+
+        .contact-value {
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .contacts {
+            padding: 20px 0;
+        }
+
+        .contacts-title {
+            font-size: 28px;
+        }
+
+        .contacts-subtitle {
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        .contact-card {
+            padding: 15px;
+        }
+    }
+</style>
+{% endblock %}

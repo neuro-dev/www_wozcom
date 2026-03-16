@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block title %}Wozcom{% endblock %}
+{% block meta_description %}Wozcom{% endblock %}
+
+{% block content %}
+<!-- Hero секция -->
+<section class="hero" id="about">
+    <div class="profile-photo">
+        <img src="./static/avatar_no_meta.jpg" alt="Дмитрий Зубков aka wozcom" class="profile-img">
+    </div>
+    <div class="hero-content">
+        <span class="hero-title">Engineer/Developer</span>
+        <h1 class="hero-name">Дмитрий Зубков</h1>
+        <p class="hero-description">
+            Привет! Я Дмитрий, Дима, Димати, в интернетах всяких <a href="{{ url_for('index') }}">[wozcom]</a>. </br>
+            По жизни в движении. Если нечем заняться, я просто не могу сидеть на месте: пойду что-нибудь ковырять, настраивать или разбирать. </br>
+            Будь то железо, софт или машина — неважно.</br>
+            Сам я сетевик с корочкой программиста, поэтому мне одинаково интересно и новый стек в докере поднять да поковырять, и комбайн изнутри изучить.</br>
+            Могу надолго зависнуть с каким-нибудь проектом: от проброса Yggdrasil за рубежик, до вайбкодинга расширения под свои задачи. Ну или вот сайтец на flask`е запилить</br>
+            Люблю машины страстно. Грязь под ногтями — норм.</br>
+            Жизнь тасовала меня по разным местам, так что я не брезглив. Кроме одного: соевое мясо — это мимо.
+        </p>
+        <div class="hero-buttons">
+            <!--<a href="#" class="btn btn-primary" download>Резюме?</a>-->
+            <a href="{{ url_for('contacts') }}" class="btn btn-primary">Контакты</a>
+        </div>
+    </div>
+</section>
+
+<!-- Секция услуг -->
+<section class="services">
+    <h2 class="section-title">Занятия</h2>
+    <div class="services-grid">
+        <div class="service-card">
+            <div class="service-icon">✎</div>
+            <div class="service-content">
+                <h3 class="service-name">Контент-мейкер</h3>
+                <p class="service-description">
+                    Веду тележку.</br>
+                    Могу какой-нибудь видосик смонтировать.</br>
+                    А могу и пост натыкать,</br>
+                    Так что тг прожевать не может.</br>
+                    Пытаюсь запечатлить и поделиться тем,</br>
+                    Что в голове моей выглядит круто</br>
+                    Да и меж знакомых и друзей расшарить.</br>
+                    Только туда нереально попасть;)
+                </p>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🌏</div>
+            <div class="service-content">
+                <h3 class="service-name">Сети</h3>
+                <p class="service-description">
+                    Больше трех лет в сетях.</br>
+                    От региональных провайдеров,</br>
+                    До крупных ЦОД (пока стартовал)</br>
+                    А так можно сказать "бывалый".
+                </p>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🖥</div>
+            <div class="service-content">
+                <h3 class="service-name">Разработка</h3>
+                <p class="service-description">
+                    Есть склонность к разработке.</br>
+                    Начинается как обычно с "А что если?"</br>
+                    Заканчивается тем, что в 3 ночи</br>
+                    Пытаюсь защитить сервер придумывая</br>
+                    Очередной honeypod.
+                </p>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🚗</div>
+            <div class="service-content">
+                <h3 class="service-name">Машинки</h3>
+                <p class="service-description">
+                    Могу засесть в гарже в очередной раз что-то мастеря.</br>
+                    А могу от скуки скинуть ноускат с тачки и щеточкой</br>
+                    Вымывать реагенты после весны)
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
